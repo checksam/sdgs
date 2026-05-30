@@ -21,7 +21,7 @@ body {
 .navbar {
     background-color: #FFFFFF;
     border-bottom: 1px solid #E8E8E8;
-    padding: 16px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -97,77 +97,180 @@ body {
 
 /* ==================== HERO SECTION ==================== */
 .hero {
-    background: linear-gradient(135deg, #D7E9FF 0%, #E8F1FF 100%);
-    padding: 60px 20px;
-    text-align: center;
+    background-color: #F4F7FF;
+    padding: 24px 24px 100px 24px;
+    position: relative;
+    overflow: visible;
+    min-height: 480px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url('/gambar/beranda/gelombang.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    filter: drop-shadow(0 0 250px rgba(30, 58, 138, 0.567));
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
     text-align: left;
+    max-width: 520px;
 }
 
 .hero-title {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 56px;
+    font-weight: 800;
     color: #0E1E3F;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    margin-bottom: 10px;
+    line-height: 1.08;
+}
+
+.hero-title-underline {
+    display: inline-block;
+    position: relative;
+    color: #0066FF;
+}
+
+.hero-title-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.1em;
+    width: 100%;
+    height: 0.35em;
+    background-color: rgba(0, 102, 255, 0.25);
+    border-radius: 999px;
+    z-index: -1;
 }
 
 .hero-subtitle {
     font-size: 16px;
     color: #666;
-    margin-bottom: 30px;
-    line-height: 1.6;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    max-width: 420px;
 }
 
 .hero-search {
     display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 14px;
+    background-color: #FFFFFF;
+    padding: 26px 22px;
+    border-radius: 24px;
+    box-shadow: 0 16px 48px rgba(14, 30, 63, 0.12);
+    width: 300px;
+    min-width: 300px;
+    border: 1px solid rgba(14, 30, 63, 0.08);
+}
+
+.hero-lokasi {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hero-lokasi span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+.search-input-lokasi {
+    padding: 12px 14px;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    width: 100%;
 }
 
 .search-input {
-    flex: 1;
-    padding: 14px 16px;
+    padding: 12px 14px;
     border: 1px solid #DDD;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 6px;
+    font-size: 13px;
     background-color: #FFFFFF;
+    width: 100%;
 }
 
 .search-button {
-    padding: 14px 32px;
+    padding: 12px 24px;
     background-color: #0E1E3F;
     color: #FFFFFF;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .search-button:hover {
     background-color: #051233;
 }
 
-.hero-image {
-    text-align: center;
+.hero-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 340px;
+    flex: 1;
+    z-index: 1;
 }
 
-.hero-image img {
+.hero-people {
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     height: auto;
+    position: relative;
+    z-index: 3;
+    margin-top: -10px;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 110px;
+    display: none;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.wave-image {
+    display: none;
 }
 
 /* ==================== SECTION CARD ==================== */

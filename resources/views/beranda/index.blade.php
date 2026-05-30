@@ -3,19 +3,32 @@
 @section('content')
 <!-- Hero Section -->
 <div class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1 class="hero-title">Find Your Career Without Limits.</h1>
-            <p class="hero-subtitle">Platform terpercaya untuk mencari pekerjaan impian dan peluang karir yang sempurna.</p>
-            
-            <div class="hero-search">
-                <input type="text" class="search-input" placeholder="Cari pekerjaan, skill, perusahaan">
-                <input type="text" class="search-input" placeholder="Cari Lokasi">
-                <button class="search-button">Cari</button>
+    <div class="hero-wrapper">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find Your Career Without <span class="hero-title-underline">Limits.</span></h1>
+                <p class="hero-subtitle">Platform karir modern untuk semua kemampuan dan potensi.</p>
+                
+                <div class="hero-search">
+                    <input type="text" class="search-input" placeholder="Cari pekerjaan, skill, perusahaan">
+                    <div class="hero-lokasi">
+                        <span>Lokasi</span>
+                        <select class="search-select">
+                            <option value="">Cari Lokasi</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="surabaya">Surabaya</option>
+                        </select>
+                    </div>
+                    <button class="search-button">Cari</button>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="{{ asset('gambar/beranda/gambar_orang.png') }}" alt="Career Professionals" class="hero-people">
             </div>
         </div>
-        <div class="hero-image">
-            <img src="{{ asset('gambar/beranda/gambar_orang.png') }}" alt="Career Image">
+        <div class="hero-wave">
+            <img src="{{ asset('gambar/beranda/gelombang.png') }}" alt="Wave" class="wave-image">
         </div>
     </div>
 </div>
@@ -245,7 +258,7 @@
         </div>
 
         <div class="mengapa-hireable-image">
-            <img src="{{ asset('gambar/beranda/Vector (2).png') }}" alt="HireAble Features">
+            <img src="{{ asset('gambar/beranda/Happy Professional.png') }}" alt="HireAble Features">
         </div>
     </div>
 </div>

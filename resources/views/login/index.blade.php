@@ -41,7 +41,7 @@
         </div>
 
         <div class="form-image">
-            <img src="{{ asset('gambar/beranda/Icon.png') }}" alt="Login Image">
+            <img src="{{ asset('gambar/login/login.png') }}" alt="Login Image">
         </div>
     </div>
 </div>
