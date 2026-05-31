@@ -3,34 +3,43 @@
 @section('content')
 <!-- Hero Section -->
 <div class="hero">
-    <div class="hero-wrapper">
-        <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Find Your Career Without <span class="hero-title-underline">Limits.</span></h1>
+                <h1 >Find Your Career Without Limits.</h1>
                 <p class="hero-subtitle">Platform karir modern untuk semua kemampuan dan potensi.</p>
                 
                 <div class="hero-search">
-                    <input type="text" class="search-input" placeholder="Cari pekerjaan, skill, perusahaan">
+                    <div class="search-field search-field--text">
+                        <span class="search-icon search-icon--magnifier">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="7" stroke="#0E1E3F" stroke-width="2"/>
+                                <path d="M16.5 16.5L21 21" stroke="#0E1E3F" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                        <input type="text" class="search-input" placeholder="Cari pekerjaan, skill, perusahaan">
+                    </div>
                     <div class="hero-lokasi">
                         <span>Lokasi</span>
-                        <select class="search-select">
-                            <option value="">Cari Lokasi</option>
-                            <option value="jakarta">Jakarta</option>
-                            <option value="bandung">Bandung</option>
-                            <option value="surabaya">Surabaya</option>
-                        </select>
+                        <div class="search-field search-field--select">
+                            <span class="search-icon search-icon--location">
+                                <svg width="18" height="20" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.5C8.68629 2.5 6 5.18629 6 8.5C6 14.25 12 25.5 12 25.5C12 25.5 18 14.25 18 8.5C18 5.18629 15.3137 2.5 12 2.5Z" stroke="#0E1E3F" stroke-width="2"/>
+                                    <circle cx="12" cy="8.5" r="2.5" fill="#0E1E3F"/>
+                                </svg>
+                            </span>
+                            <select class="search-select">
+                                <option value="">Cari Lokasi</option>
+                                <option value="jakarta">Jakarta</option>
+                                <option value="bandung">Bandung</option>
+                                <option value="surabaya">Surabaya</option>
+                            </select>
+                        </div>
                     </div>
                     <button class="search-button">Cari</button>
                 </div>
             </div>
-            <div class="hero-image-wrapper">
-                <img src="{{ asset('gambar/beranda/gambar_orang.png') }}" alt="Career Professionals" class="hero-people">
-            </div>
-        </div>
         <div class="hero-wave">
             <img src="{{ asset('gambar/beranda/gelombang.png') }}" alt="Wave" class="wave-image">
         </div>
-    </div>
 </div>
 
 <!-- Temukan Peluang Kerja Section -->
