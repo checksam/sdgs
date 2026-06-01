@@ -5,7 +5,7 @@
 <div class="hero">
             <div class="hero-content">
                 <h1 >Find Your Career Without Limits.</h1>
-                <p class="hero-subtitle">Platform karir modern untuk semua kemampuan dan potensi.</p>
+                <p class="hero-subtitle">Platform karir modern untuk semua kemampuan dan&nbsp;potensi.</p>
                 
                 <div class="hero-search">
                     <div class="search-field search-field--text">

@@ -37,3 +37,10 @@ Route::get('/password-baru', function () {
 Route::get('/lupa-password', function () {
     return view('lupa_password.index');
 });
+
+/* Front-end-only auth views */
+Route::view('/login', 'auth.login');
+Route::view('/register', 'auth.register');
+Route::view('/forgot-password', 'auth.forgot');
+Route::view('/password-baru', 'auth.password-baru');
+Route::view('/verify', 'auth.verify');

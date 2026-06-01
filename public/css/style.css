@@ -153,20 +153,22 @@ body {
     color: #666;
     margin-bottom: 18px;
     line-height: 1.5;
-    max-width: 420px;
+    max-width: 680px; /* allow full sentence on one line */
+    white-space: nowrap; /* prevent wrapping */
+    overflow: visible;
 }
 
 .hero-search {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
     background-color: #FFFFFF;
-    padding: 24px;
-    border-radius: 32px;
-    box-shadow: 0 28px 80px rgba(14, 30, 63, 0.12);
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0 14px 36px rgba(14, 30, 63, 0.08);
     width: 100%;
-    max-width: 430px;
-    border: 1px solid rgba(14, 30, 63, 0.08);
+    max-width: 320px;
+    border: 1px solid rgba(14, 30, 63, 0.05);
     position: relative;
     z-index: 3;
 }
@@ -174,25 +176,25 @@ body {
 .search-field {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 16px 18px;
-    border-radius: 22px;
-    background-color: #F4F7FF;
-    border: 1px solid #E5EBF8;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background-color: #F6F8FF;
+    border: 1px solid #EEF4FB;
 }
 
 .search-field.search-field--select {
-    padding: 14px 16px;
+    padding: 10px 12px;
 }
 
 .search-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 16px;
-    background-color: #E6EEFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #E9F0FB;
     color: #0E1E3F;
     flex-shrink: 0;
 }
@@ -200,7 +202,7 @@ body {
 .hero-lokasi {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .hero-lokasi span {
@@ -214,14 +216,14 @@ body {
     flex: 1;
     border: none;
     background: transparent;
-    font-size: 15px;
+    font-size: 13px;
     color: #14213D;
     outline: none;
     min-width: 0;
 }
 
 .search-input::placeholder {
-    color: #8C96AA;
+    color: #9AA6BA;
 }
 
 .search-select {
@@ -231,17 +233,17 @@ body {
     padding: 0;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%2376869A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right 14px center;
+    background-position: right 12px center;
 }
 
 .search-button {
-    padding: 14px 24px;
+    padding: 10px 16px;
     background-color: #0E1E3F;
     color: #FFFFFF;
     border: none;
-    border-radius: 18px;
+    border-radius: 12px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
