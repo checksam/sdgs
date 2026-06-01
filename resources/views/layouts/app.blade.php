@@ -16,7 +16,7 @@
             <ul class="nav-menu">
                 <li><a href="/cari-kerja" class="nav-link">Cari Kerja</a></li>
                 <li><a href="/perusahaan" class="nav-link">Perusahaan</a></li>
-                <li><a href="#" class="nav-link">Tips Karir</a></li>
+                <li><a href="/tips-karir" class="nav-link {{ request()->is('tips-karir') ? 'active' : '' }}">Tips Karir</a></li>
                 <li><a href="#" class="nav-link">Pelatihan</a></li>
             </ul>
             <a href="/login" class="btn-masuk">Masuk</a>

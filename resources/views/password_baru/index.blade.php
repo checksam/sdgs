@@ -23,7 +23,7 @@
         </div>
 
         <div class="form-image">
-            <img src="{{ asset('gambar/beranda/Icon (1).png') }}" alt="New Password Image">
+            <img src="{{ asset('gambar/beranda/lupa_password.png') }}" alt="New Password Image">
         </div>
     </div>
 </div>

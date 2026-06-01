@@ -4,7 +4,7 @@
 <div class="section" style="padding: 40px 20px;">
     <div class="form-container" style="grid-template-columns: 1fr 1fr;">
         <div class="form-image">
-            <img src="{{ asset('gambar/beranda/Vector (1).png') }}" alt="Register Image">
+            <img src="{{ asset('gambar/register/.png') }}" alt="Register Image">
         </div>
 
         <div class="form-content">

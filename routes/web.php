@@ -18,6 +18,10 @@ Route::get('/perusahaan', function () {
     return view('perusahaan.index');
 });
 
+Route::get('/tips-karir', function () {
+    return view('tips_karir.index');
+});
+
 Route::get('/forgot-password', function () {
     return view('forgot_password.index');
 });
