@@ -84,7 +84,7 @@
                             <span class="tag">Fortune 500</span>
                             <span class="tag">Series D</span>
                         </div>
-                        <a href="#" class="company-action">View Company Profile</a>
+                        <a href="/company-profile" class="company-action">View Company Profile</a>
                     </div>
 
                     <div class="company-card">

@@ -48,3 +48,14 @@ Route::view('/register', 'auth.register');
 Route::view('/forgot-password', 'auth.forgot');
 Route::view('/password-baru', 'auth.password-baru');
 Route::view('/verify', 'auth.verify');
+Route::view('/pelatihan', 'pelatihan.index');
+
+// FAQ page
+Route::get('/faq', function () {
+    return view('faq.index');
+});
+
+// Company profile page
+Route::get('/company-profile', function () {
+    return view('perusahaan.profile');
+});;

@@ -17,7 +17,7 @@
                 <li><a href="/cari-kerja" class="nav-link">Cari Kerja</a></li>
                 <li><a href="/perusahaan" class="nav-link">Perusahaan</a></li>
                 <li><a href="/tips-karir" class="nav-link {{ request()->is('tips-karir') ? 'active' : '' }}">Tips Karir</a></li>
-                <li><a href="#" class="nav-link">Pelatihan</a></li>
+                <li><a href="/pelatihan" class="nav-link {{ request()->is('pelatihan') ? 'active' : '' }}">Pelatihan</a></li>
             </ul>
             <a href="/login" class="btn-masuk">Masuk</a>
         </div>
@@ -29,6 +29,7 @@
     </main>
 
     <!-- Footer -->
+    @unless(request()->is('faq'))
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -43,14 +44,14 @@
                 <h4>Tentang Kami</h4>
                 <ul>
                     <li><a href="#">Tentang HireAble</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                     <li><a href="#">Kontak</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h4>Customer Support</h4>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
@@ -74,5 +75,6 @@
             <p>&copy; 2025 HireAble. All rights reserved.</p>
         </div>
     </footer>
+    @endunless
 </body>
 </html>
