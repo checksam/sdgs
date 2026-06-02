@@ -210,4 +210,15 @@
     <p style="font-size: 12px; margin-bottom: 16px;">CV Booster untuk mendapatkan hasil maksimal dari job recruiters 3x lebih cepat.</p>
     <button style="width: 100%; padding: 8px; background-color: #FFFFFF; color: #0E1E3F; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Try Free Now</button>
 </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.btn-apply').forEach(function(button) {
+            button.addEventListener('click', function () {
+                window.location.href = '/login';
+            });
+        });
+    });
+</script>
 @endsection

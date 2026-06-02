@@ -278,4 +278,14 @@
     <p class="cta-subtitle">Bergabunglah dengan ribuan profesional yang telah menemukan pekerjaan impian mereka melalui HireAble.</p>
     <a href="/daftar" class="cta-button">Daftar Sekarang</a>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.btn-apply').forEach(function(button) {
+            button.addEventListener('click', function () {
+                window.location.href = '/login';
+            });
+        });
+    });
+</script>
 @endsection

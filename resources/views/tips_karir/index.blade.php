@@ -123,4 +123,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.tips-card-link, .tips-hero-cta').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                window.location.href = '/login';
+            });
+        });
+    });
+</script>
 @endsection
