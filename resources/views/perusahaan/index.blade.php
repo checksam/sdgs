@@ -71,7 +71,7 @@
                 <div class="companies-grid">
                     <div class="company-card">
                         <div class="company-header">
-                            <div class="company-logo">🔷</div>
+                            <div class="company-logo"><img src="{{ asset('gambar/perusahaan/TechNova Solutions.png') }}" alt="TechNova Solutions"></div>
                             <span class="company-badge">12 Active Jobs</span>
                         </div>
                         <h3 class="company-name">TechNova Solutions</h3>
@@ -89,7 +89,7 @@
 
                     <div class="company-card">
                         <div class="company-header">
-                            <div class="company-logo">🟩</div>
+                            <div class="company-logo"><img src="{{ asset('gambar/perusahaan/GreenHorizon Architecture.png') }}" alt="GreenHorizon Design"></div>
                             <span class="company-badge">4 Active Jobs</span>
                         </div>
                         <h3 class="company-name">GreenHorizon Design</h3>
@@ -106,7 +106,7 @@
 
                     <div class="company-card">
                         <div class="company-header">
-                            <div class="company-logo">💰</div>
+                            <div class="company-logo"><img src="{{ asset('gambar/perusahaan/FinGuard Systems.png') }}" alt="FinGuard Systems"></div>
                             <span class="company-badge">8 Active Jobs</span>
                         </div>
                         <h3 class="company-name">FinGuard Systems</h3>
@@ -123,7 +123,7 @@
 
                     <div class="company-card">
                         <div class="company-header">
-                            <div class="company-logo">🎓</div>
+                            <div class="company-logo"><img src="{{ asset('gambar/perusahaan/EduPlus Global.png') }}" alt="EduPlus Global"></div>
                             <span class="company-badge">6 Active Jobs</span>
                         </div>
                         <h3 class="company-name">EduPlus Global</h3>

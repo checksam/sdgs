@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <a href="/password-baru" style="display:block; width:100%; text-align:center; background-color:#1E9B44; color:white; padding:14px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; margin-bottom:16px;">Kirim Kode Verifikasi <span style="display:inline-block; margin-left:8px;">➤</span></a>
+                <a href="/verify" style="display:block; width:100%; text-align:center; background-color:#1E9B44; color:white; padding:14px 18px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; margin-bottom:16px;">Kirim Kode Verifikasi <span style="display:inline-block; margin-left:8px;">➤</span></a>
 
                 <hr style="border:none; border-top:1px solid #E9EDF1; margin:16px 0;">
 

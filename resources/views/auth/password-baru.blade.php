@@ -36,7 +36,7 @@
                         <div class="rule"><span class="dot"></span> Capital letter</div>
                     </div>
 
-                    <button class="reset-submit">Atur Ulang</button>
+                    <button id="reset-submit" class="reset-submit">Atur Ulang</button>
                 </div>
             </div>
         </div>
@@ -72,5 +72,29 @@
     @media (max-width: 1024px) { .password-reset-container { grid-template-columns: 1fr; } .reset-left { order:2; } .reset-right { order:1; padding-bottom:20px; } }
     @media (max-width: 720px) { .reset-card-inner { padding:28px; } .reset-left { padding:28px; } .reset-left h1 { font-size:32px; } }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const newPassword = document.getElementById('new-password');
+        const confirmPassword = document.getElementById('confirm-password');
+        const submitButton = document.getElementById('reset-submit');
+
+        submitButton.addEventListener('click', function () {
+            const passwordValue = newPassword.value.trim();
+            const confirmValue = confirmPassword.value.trim();
+
+            if (passwordValue.length < 8) {
+                alert('Kata sandi baru harus minimal 8 karakter.');
+                return;
+            }
+            if (passwordValue !== confirmValue) {
+                alert('Kata sandi dan konfirmasi tidak cocok.');
+                return;
+            }
+
+            window.location.href = '/login';
+        });
+    });
+</script>
 
 @endsection

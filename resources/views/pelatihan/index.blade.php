@@ -58,14 +58,14 @@
                     <p>Program akselerasi karir 12 minggu dengan jaminan interview di 500+ mitra perusahaan kami. Belajar langsung dari praktisi top.</p>
                     <div class="program-features">
                         <div class="feature">
-                            <img src="{{ asset('gambar/pelatihan/Icon (5).png') }}" alt="placement" class="feature-icon" />
+                            <img src="{{ asset('gambar/pelatihan/tas.png') }}" alt="placement" class="feature-icon" />
                             <div>
                                 <div class="feature-title">Jaminan Penempatan</div>
                                 <div class="feature-desc">Kami membantu Anda mendapatkan pekerjaan pertama dalam 6 bulan setelah lulus.</div>
                             </div>
                         </div>
                         <div class="feature">
-                            <img src="{{ asset('gambar/pelatihan/Icon (6).png') }}" alt="mentoring" class="feature-icon" />
+                            <img src="{{ asset('gambar/pelatihan/orang.png') }}" alt="mentoring" class="feature-icon" />
                             <div>
                                 <div class="feature-title">Mentoring 1-on-1</div>
                                 <div class="feature-desc">Sesi konsultasi pribadi setiap minggu untuk membahas progres dan portofolio Anda.</div>
