@@ -129,7 +129,7 @@
                         </div>
                         <div class="job-actions">
                             <button class="btn-detail">Lihat</button>
-                            <button class="btn-apply">Lamar Sekarang</button>
+                            <button class="btn-apply" data-job="Senior UI/UX Designer">Lamar Sekarang</button>
                         </div>
                     </div>
 
@@ -216,7 +216,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.btn-apply').forEach(function(button) {
             button.addEventListener('click', function () {
-                window.location.href = '/login';
+                window.location.href = '/lamar-sekarang';
             });
         });
     });

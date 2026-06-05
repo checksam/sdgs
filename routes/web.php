@@ -14,6 +14,10 @@ Route::get('/cari-kerja', function () {
     return view('cari_kerja.index');
 });
 
+Route::get('/lamar-sekarang', function () {
+    return view('cari_kerja.lamar');
+});
+
 Route::get('/perusahaan', function () {
     return view('perusahaan.index');
 });
